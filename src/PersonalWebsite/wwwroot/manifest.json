@@ -1,0 +1,17 @@
+{
+  "name": "Romain Delamare Personal Website",
+  "short_name": "RD Website",
+  "description": "This is my personal website",
+  "orientation": "portrait-primary",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#722064",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
