@@ -55,7 +55,7 @@
             "icon": "place"
           },
           {
-            "label": "Equipe : 20 personnes",
+            "label": "Équipe : 20 personnes",
             "icon": "people"
           },
           {
@@ -75,7 +75,7 @@
         "supplement": "Alternance",
         "iconInfos": [
           {
-            "label": "Universite Grenoble Alpes",
+            "label": "Université Grenoble Alpes",
             "icon": "school"
           },
           {
@@ -87,11 +87,11 @@
         "to": 2017
       },
       {
-        "name": "Licence Professionnelle Systemes Informatiques et Logiciels",
+        "name": "Licence Professionnelle Systèmes Informatiques et Logiciels",
         "supplement": "Alternance",
         "iconInfos": [
           {
-            "label": "Universite Grenoble Alpes",
+            "label": "Université Grenoble Alpes",
             "icon": "school"
           },
           {

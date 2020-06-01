@@ -307,7 +307,12 @@ html, body {
   font-family: 'Nunito', sans-serif;
   margin: 0px;
   height: 100%;
-  background-color: #F8F8FF; }
+  background-color: #F8F8FF;
+  scrollbar-width: thin; }
+  html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+    width: 8px; }
+  html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+    background: #CCCCCC; }
 
 button {
   font-family: 'Nunito', sans-serif; }

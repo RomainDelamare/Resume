@@ -9,6 +9,14 @@ html, body {
     margin: 0px;
     height: 100%;
     background-color: $white-color;
+    scrollbar-width: thin;
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $lightgrey-color;
+    }
 }
 
 button {
