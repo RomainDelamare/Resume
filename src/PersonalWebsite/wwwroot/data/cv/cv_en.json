@@ -145,8 +145,16 @@
       "icon": "climbing"
     },
     {
+      "label": "Mountain biking",
+      "icon": "biking"
+    },
+    {
       "label": "Playing guitar",
       "icon": "guitar"
+    },
+    {
+      "label": "Travel",
+      "icon": "travel"
     },
     {
       "label": "Coding",
@@ -159,6 +167,10 @@
     {
       "label": "Playing video games",
       "icon": "videogame"
+    },
+    {
+      "label": "Watching movies & series",
+      "icon":  "tv"
     }
   ]
 }

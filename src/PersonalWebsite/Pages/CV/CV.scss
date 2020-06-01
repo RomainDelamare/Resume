@@ -3,9 +3,10 @@
 #page-cv {
     flex-grow: 1;
     background-color: $white-color;
-    background: radial-gradient(50% 300px at 0% 0%, $primary-color, transparent), radial-gradient(50% 300px at 100% 0%, $secondary-color, transparent), radial-gradient(50% 300px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 75px at 100% 100%, $primary-color, transparent), radial-gradient(50% 75px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 75px at 50% 100%, $tertiary-color, transparent);
+    background: radial-gradient(50% 300px at 0% 0%, $primary-color, transparent), radial-gradient(50% 300px at 100% 0%, $secondary-color, transparent), radial-gradient(50% 300px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 150px at 100% 100%, $primary-color, transparent), radial-gradient(50% 150px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 150px at 50% 100%, $tertiary-color, transparent);
+
     @media (max-width: 576px) {
-        background: radial-gradient(50% 200px at 0% 0%, $primary-color, transparent), radial-gradient(50% 200px at 100% 0%, $secondary-color, transparent), radial-gradient(75% 200px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 75px at 100% 100%, $primary-color, transparent), radial-gradient(50% 75px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 75px at 50% 100%, $tertiary-color, transparent);
+        background: radial-gradient(50% 200px at 0% 0%, $primary-color, transparent), radial-gradient(50% 200px at 100% 0%, $secondary-color, transparent), radial-gradient(75% 200px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 150px at 100% 100%, $primary-color, transparent), radial-gradient(50% 150px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 150px at 50% 100%, $tertiary-color, transparent);
     }
 
     &.page-cv-not-loaded {
@@ -42,8 +43,7 @@
         justify-content: center;
         color: $primary-color;
         text-align: center;
-        /*background-color: $primary-color;*/
-        /*background: radial-gradient(ellipse at 0% 0%, $primary-color, transparent 75%), radial-gradient(ellipse at 100% 0%, $secondary-color, transparent 75%), radial-gradient(ellipse at 50% 0%, $tertiary-color, transparent 75%);*/
+
         #name {
             font-size: 40px;
             font-weight: 300;
@@ -69,19 +69,46 @@
         }
     }
 
-    #block-attributions {
+    footer {
         padding: 10px 50px;
-        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         @media (max-width: 576px) {
             padding: 10px;
         }
 
-        .attributions {
+        .language {
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            .label {
+                margin-bottom: 10px;
+                color: $primary-color;
+            }
+
+            input {
+                width: 32px;
+                height: 32px;
+                margin: 0px 10px;
+                opacity: 0.5;
+                transition: 0.5s;
+
+                &:hover, &:focus {
+                    outline: none;
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .attributions {
+            font-size: 0.7em;
         }
     }
 

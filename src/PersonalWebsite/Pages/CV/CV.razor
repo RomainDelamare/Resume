@@ -1,5 +1,6 @@
 ﻿@page "/cv"
 @inject HttpClient Http
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 <div id="page-cv" class="@(cv == null ? "page-cv-not-loaded" : "page-cv-loaded")">
     <div id="block-name" class="block">
@@ -7,14 +8,14 @@
         <span id="job-position">@cv?.JobPosition</span>
     </div>
     <div id="block-aboutme" class="block">
-        <h1>About me</h1>
+        <h1>@translation?.ABOUT_ME</h1>
         @if (cv != null)
         {
-            <Aboutme Picture="@cv.Picture" About="@cv.Aboutme" Contacts="@cv.Contacts" />
+            <Aboutme Picture="@cv.Picture" About="@cv.Aboutme" Contacts="@cv.Contacts" Translation="@translation" />
         }
     </div>
     <div id="block-skill" class="block">
-        <h1>My skills</h1>
+        <h1>@translation?.SKILLS</h1>
         <div class="container-skill">
             @if (cv != null)
             {
@@ -26,27 +27,39 @@
         </div>
     </div>
     <div id="block-experience" class="block">
-        <h1>Experience</h1>
+        <h1>@translation?.EXPERIENCES</h1>
         @if (cv != null)
         {
             <Timeline TimelineData="cv.Experience" />
         }
     </div>
     <div id="block-education" class="block">
-        <h1>Education & Diplomas</h1>
+        <h1>@translation?.EDUCATIONS_AND_DIPLOMAS</h1>
         @if (cv != null)
         {
             <Timeline TimelineData="cv.Education" />
         }
     </div>
     <div id="block-hobbies" class="block">
-        <h1>Hobbies</h1>
+        <h1>@translation?.HOBBIES</h1>
         @if (cv != null)
         {
             <Hobbies HobbiesData="cv.Hobbies" />
         }
     </div>
-    <div id="block-attributions">
+    <div id="block-language" class="block">
+        
+    </div>
+    <footer>
+        <div class="language">
+            <div class="label">
+                @translation?.SWITCH_LANGUAGE
+            </div>
+            <div>
+                <input type="image" alt="Français" src="images/flags/fr.svg" @onclick="@(async () => await ChangeLanguage("fr"))">
+                <input type="image" alt="English" src="images/flags/us.svg" @onclick="@(async () => await ChangeLanguage("en"))">
+            </div>
+        </div>
         <div class="attributions">
             <span>
                 Attributions :
@@ -55,14 +68,58 @@
                 Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </span>
         </div>
-    </div>
+    </footer>
 </div>
 
 @code {
     private CVViewModel cv;
+    private Translation translation;
+
+    private string selectedLang;
+
+    private readonly string LANG_STORAGE_KEY = "lang";
+    private readonly string[] ACCEPTED_LANG = new string[] { "fr", "en" };
+    private readonly string FALLBACK_LANG = "en";
 
     protected override async Task OnInitializedAsync()
     {
-        cv = await Http.GetFromJsonAsync<CVViewModel>("data/cv.json");
+        await LoadData();
+    }
+
+    private async Task ChangeLanguage(string lang)
+    {
+        selectedLang = lang;
+        await localStorage.SetItemAsync(LANG_STORAGE_KEY, lang);
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        var lang = await GetLang();
+        await LoadI18n(lang);
+        await LoadCv(lang);
+    }
+
+    private async Task LoadCv(string lang)
+    {
+        cv = await Http.GetFromJsonAsync<CVViewModel>($"data/cv/cv_{lang}.json");
+    }
+
+    private async Task LoadI18n(string lang)
+    {
+        translation = await Http.GetFromJsonAsync<Translation>($"data/i18n/{lang}.json");
+    }
+
+    private async Task<string> GetLang()
+    {
+        var lang = await localStorage.GetItemAsync<string>(LANG_STORAGE_KEY);
+        if (ACCEPTED_LANG.Contains(lang))
+            return lang;
+
+        lang = CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
+        if (ACCEPTED_LANG.Contains(lang))
+            return lang;
+
+        return FALLBACK_LANG;
     }
 }

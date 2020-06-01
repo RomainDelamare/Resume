@@ -1,10 +1,10 @@
 ﻿#page-cv {
   flex-grow: 1;
   background-color: #F8F8FF;
-  background: radial-gradient(50% 300px at 0% 0%, #673AB7, transparent), radial-gradient(50% 300px at 100% 0%, #D81B60, transparent), radial-gradient(50% 300px at 50% 0%, #FDD835, transparent), radial-gradient(50% 75px at 100% 100%, #673AB7, transparent), radial-gradient(50% 75px at 0% 100%, #D81B60, transparent), radial-gradient(50% 75px at 50% 100%, #FDD835, transparent); }
+  background: radial-gradient(50% 300px at 0% 0%, #673AB7, transparent), radial-gradient(50% 300px at 100% 0%, #D81B60, transparent), radial-gradient(50% 300px at 50% 0%, #FDD835, transparent), radial-gradient(50% 150px at 100% 100%, #673AB7, transparent), radial-gradient(50% 150px at 0% 100%, #D81B60, transparent), radial-gradient(50% 150px at 50% 100%, #FDD835, transparent); }
   @media (max-width: 576px) {
     #page-cv {
-      background: radial-gradient(50% 200px at 0% 0%, #673AB7, transparent), radial-gradient(50% 200px at 100% 0%, #D81B60, transparent), radial-gradient(75% 200px at 50% 0%, #FDD835, transparent), radial-gradient(50% 75px at 100% 100%, #673AB7, transparent), radial-gradient(50% 75px at 0% 100%, #D81B60, transparent), radial-gradient(50% 75px at 50% 100%, #FDD835, transparent); } }
+      background: radial-gradient(50% 200px at 0% 0%, #673AB7, transparent), radial-gradient(50% 200px at 100% 0%, #D81B60, transparent), radial-gradient(75% 200px at 50% 0%, #FDD835, transparent), radial-gradient(50% 150px at 100% 100%, #673AB7, transparent), radial-gradient(50% 150px at 0% 100%, #D81B60, transparent), radial-gradient(50% 150px at 50% 100%, #FDD835, transparent); } }
   #page-cv.page-cv-not-loaded {
     opacity: 0; }
   #page-cv.page-cv-loaded {
@@ -27,9 +27,7 @@
     flex-direction: column;
     justify-content: center;
     color: #673AB7;
-    text-align: center;
-    /*background-color: $primary-color;*/
-    /*background: radial-gradient(ellipse at 0% 0%, $primary-color, transparent 75%), radial-gradient(ellipse at 100% 0%, $secondary-color, transparent 75%), radial-gradient(ellipse at 50% 0%, $tertiary-color, transparent 75%);*/ }
+    text-align: center; }
     #page-cv #block-name #name {
       font-size: 40px;
       font-weight: 300; }
@@ -44,17 +42,36 @@
     @media (max-width: 576px) {
       #page-cv #block-skill .container-skill {
         grid-template-columns: repeat(1, 1fr); } }
-  #page-cv #block-attributions {
+  #page-cv footer {
     padding: 10px 50px;
-    font-size: 0.7em; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     @media (max-width: 576px) {
-      #page-cv #block-attributions {
+      #page-cv footer {
         padding: 10px; } }
-    #page-cv #block-attributions .attributions {
+    #page-cv footer .language {
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center; }
+      justify-content: center;
+      margin-bottom: 10px; }
+      #page-cv footer .language .label {
+        margin-bottom: 10px;
+        color: #673AB7; }
+      #page-cv footer .language input {
+        width: 32px;
+        height: 32px;
+        margin: 0px 10px;
+        opacity: 0.5;
+        transition: 0.5s; }
+        #page-cv footer .language input:hover, #page-cv footer .language input:focus {
+          outline: none;
+          opacity: 1;
+          transform: scale(1.1); }
+    #page-cv footer .attributions {
+      font-size: 0.7em; }
 
 @keyframes page-appear {
   from {
@@ -216,6 +233,9 @@
     width: 100px;
     height: 100px;
     margin: 20px; }
+    .component-cv-hobbies .hobby img {
+      width: 64px;
+      height: 64px; }
   .component-cv-hobbies .tooltip-parent {
     position: relative;
     text-align: center; }
@@ -270,13 +290,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: 0.5s; }
-      .component-cv-aboutme .left-block .socials a:hover {
-        color: #D81B60; }
-      .component-cv-aboutme .left-block .socials a:focus {
+      transition: 0.3s; }
+      .component-cv-aboutme .left-block .socials a:hover, .component-cv-aboutme .left-block .socials a:focus {
         text-decoration: none;
         outline: none;
-        color: #D81B60; }
+        transform: scale(1.2);
+        color: #7e57c2; }
   .component-cv-aboutme .left-block .download button {
     display: flex;
     flex-direction: row;
@@ -291,12 +310,10 @@
     transition: 0.5s; }
     .component-cv-aboutme .left-block .download button span {
       margin: 0px 8px 0px 0px; }
-    .component-cv-aboutme .left-block .download button:hover {
-      background-color: #D81B60; }
-    .component-cv-aboutme .left-block .download button:focus {
+    .component-cv-aboutme .left-block .download button:hover, .component-cv-aboutme .left-block .download button:focus {
       text-decoration: none;
       outline: none;
-      background-color: #D81B60; }
+      background-color: #7e57c2; }
 
 .component-cv-aboutme .right-block {
   text-align: justify;
