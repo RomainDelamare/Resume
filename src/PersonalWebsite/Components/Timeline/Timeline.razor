@@ -1,0 +1,47 @@
+﻿<div class="component-timeline">
+    @foreach (EventViewModel timelineEvent in @TimelineData.Events)
+    {
+        <div class="timeline-event">
+            <div class="timeline-date">
+                @if (!timelineEvent.To.HasValue)
+                {
+                    <span>Depuis @timelineEvent.From</span>
+                }
+                else if (timelineEvent.From == timelineEvent.To.Value)
+                {
+                    <span>@timelineEvent.From</span>
+                }
+                else
+                {
+                    <span>@timelineEvent.From - @timelineEvent.To</span>
+                }
+            </div>
+            <div class="timeline-line"></div>
+            <div class="timeline-content">
+                <div class="name">
+                    <span class="label">@timelineEvent.Name</span>
+                    <span class="supplement">@timelineEvent.Supplement</span>
+                </div>
+                <div class="iconInfos">
+                    @foreach (var iconInfo in timelineEvent.IconInfos)
+                    {
+                        <div>
+                            <i class="material-icons-outlined md-18">
+                                @iconInfo.Icon
+                            </i>
+                            <span>@iconInfo.Label</span>
+                        </div>
+                    }
+                </div>
+                <div class="description">
+                    @((MarkupString)@timelineEvent.Description)
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public TimelineViewModel TimelineData { get; set; }
+}

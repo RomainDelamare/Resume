@@ -1,0 +1,97 @@
+﻿@import "../../Styles/Theme.scss";
+
+#page-cv {
+    flex-grow: 1;
+    background-color: $white-color;
+    background: radial-gradient(50% 300px at 0% 0%, $primary-color, transparent), radial-gradient(50% 300px at 100% 0%, $secondary-color, transparent), radial-gradient(50% 300px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 75px at 100% 100%, $primary-color, transparent), radial-gradient(50% 75px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 75px at 50% 100%, $tertiary-color, transparent);
+    @media (max-width: 576px) {
+        background: radial-gradient(50% 200px at 0% 0%, $primary-color, transparent), radial-gradient(50% 200px at 100% 0%, $secondary-color, transparent), radial-gradient(75% 200px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 75px at 100% 100%, $primary-color, transparent), radial-gradient(50% 75px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 75px at 50% 100%, $tertiary-color, transparent);
+    }
+
+    &.page-cv-not-loaded {
+        opacity: 0;
+    }
+
+    &.page-cv-loaded {
+        animation-duration: 2s;
+        animation-name: page-appear;
+    }
+
+    .block {
+        padding: 30px 50px;
+
+        @media (max-width: 576px) {
+            padding: 10px;
+        }
+
+        h1 {
+            color: $primary-color;
+            margin: 0px 0px 10px 0px;
+        }
+
+        &.block-primary {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+
+    #block-name {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $primary-color;
+        text-align: center;
+        /*background-color: $primary-color;*/
+        /*background: radial-gradient(ellipse at 0% 0%, $primary-color, transparent 75%), radial-gradient(ellipse at 100% 0%, $secondary-color, transparent 75%), radial-gradient(ellipse at 50% 0%, $tertiary-color, transparent 75%);*/
+        #name {
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        #job-position {
+            font-size: 30px;
+            font-weight: 100;
+        }
+    }
+
+    #block-skill {
+
+        .container-skill {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+
+            @media (max-width: 576px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
+    #block-attributions {
+        padding: 10px 50px;
+        font-size: 0.7em;
+
+        @media (max-width: 576px) {
+            padding: 10px;
+        }
+
+        .attributions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    @keyframes page-appear {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+}

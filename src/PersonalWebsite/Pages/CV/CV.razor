@@ -1,9 +1,68 @@
 ﻿@page "/cv"
-<h1>In progress</h1>
-<h1>CV</h1>
-<Picture />
+@inject HttpClient Http
 
+<div id="page-cv" class="@(cv == null ? "page-cv-not-loaded" : "page-cv-loaded")">
+    <div id="block-name" class="block">
+        <span id="name">@cv?.Name</span>
+        <span id="job-position">@cv?.JobPosition</span>
+    </div>
+    <div id="block-aboutme" class="block">
+        <h1>About me</h1>
+        @if (cv != null)
+        {
+            <Aboutme Picture="@cv.Picture" About="@cv.Aboutme" Contacts="@cv.Contacts" />
+        }
+    </div>
+    <div id="block-skill" class="block">
+        <h1>My skills</h1>
+        <div class="container-skill">
+            @if (cv != null)
+            {
+                @foreach (SkillViewModel skill in cv.Skills)
+                {
+                    <Skill Label="@skill.Label" Percentage="@skill.Percentage" />
+                }
+            }
+        </div>
+    </div>
+    <div id="block-experience" class="block">
+        <h1>Experience</h1>
+        @if (cv != null)
+        {
+            <Timeline TimelineData="cv.Experience" />
+        }
+    </div>
+    <div id="block-education" class="block">
+        <h1>Education & Diplomas</h1>
+        @if (cv != null)
+        {
+            <Timeline TimelineData="cv.Education" />
+        }
+    </div>
+    <div id="block-hobbies" class="block">
+        <h1>Hobbies</h1>
+        @if (cv != null)
+        {
+            <Hobbies HobbiesData="cv.Hobbies" />
+        }
+    </div>
+    <div id="block-attributions">
+        <div class="attributions">
+            <span>
+                Attributions :
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                /
+                Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </span>
+        </div>
+    </div>
+</div>
 
 @code {
+    private CVViewModel cv;
 
+    protected override async Task OnInitializedAsync()
+    {
+        cv = await Http.GetFromJsonAsync<CVViewModel>("data/cv.json");
+    }
 }

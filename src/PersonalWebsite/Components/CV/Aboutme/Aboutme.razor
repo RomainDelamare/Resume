@@ -1,0 +1,40 @@
+﻿<div class="component-cv-aboutme">
+    <div class="detail">
+        <div class="left-block">
+            <div class="picture">
+                <i class="material-icons-outlined">
+                    person
+                </i>
+            </div>
+            <div class="socials">
+                @foreach (var contact in Contacts)
+                {
+                    <a href="@contact.Link" alt="@contact.Label" title="@contact.Label"><i class="fab @contact.Icon fa-lg"></i></a>
+                }
+            </div>
+            <div class="download">
+                <button type="button">
+                    <span class="material-icons-outlined md-18">
+                        cloud_download
+                    </span>
+                    Download resume
+                </button>
+            </div>
+        </div>
+        <div class="right-block">
+            <p>Hi,</p>
+            <p>
+                @About
+            </p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Picture { get; set; }
+    [Parameter]
+    public string About { get; set; }
+    [Parameter]
+    public PersonalWebsite.Pages.CV.ContactViewModel[] Contacts { get; set; }
+}

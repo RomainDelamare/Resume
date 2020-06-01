@@ -25,4 +25,14 @@
     <None Include="compilerconfig.json" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\data\cv.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\hobbies\" />
+  </ItemGroup>
+
 </Project>

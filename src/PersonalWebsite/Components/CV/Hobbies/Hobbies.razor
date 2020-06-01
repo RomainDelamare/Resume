@@ -1,0 +1,14 @@
+﻿<div class="component-cv-hobbies">
+    @foreach (var hobby in HobbiesData)
+    {
+        <div class="hobby tooltip-parent">
+            <img src="@("images/hobbies/" + @hobby.Icon + ".png")" alt="@hobby.Label" />
+            <span class="tooltip">@hobby.Label</span>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public PersonalWebsite.Pages.CV.HobbiesViewModel[] HobbiesData { get; set; }
+}
