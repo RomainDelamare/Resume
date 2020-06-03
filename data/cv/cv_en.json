@@ -1,0 +1,176 @@
+{
+  "name": "Romain Delamare",
+  "jobPosition": "Web developer",
+  "picture": "",
+  "aboutme": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem.",
+  "contacts": [
+    {
+      "link": "https://www.linkedin.com/in/romain-delamare/",
+      "label": "Linkedin",
+      "icon": "fa-linkedin-in"
+    },
+    {
+      "link": "https://github.com/RomainDelamare",
+      "label": "Github",
+      "icon": "fa-github"
+    },
+    {
+      "link": "https://stackoverflow.com/users/13446273/romain",
+      "label": "Stack Overflow",
+      "icon": "fa-stack-overflow"
+    }
+  ],
+  "skills": [
+    {
+      "label": "C#",
+      "percentage": 90
+    },
+    {
+      "label": "Angular",
+      "percentage": 75
+    },
+    {
+      "label": "HTML/CSS",
+      "percentage": 75
+    },
+    {
+      "label": "Blazor",
+      "percentage": 50
+    }
+  ],
+  "experience": {
+    "events": [
+      {
+        "name": "Developpeur Fullstack .Net/Angular",
+        "supplement": "Independant",
+        "place": "Studi",
+        "city": "Montpellier",
+        "iconInfos": [
+          {
+            "label": "Studi",
+            "icon": "domain"
+          },
+          {
+            "label": "Montpellier",
+            "icon": "place"
+          },
+          {
+            "label": "Équipe : 20 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "E-Learning",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<ul><li>test</li><li>test2</li></ul>",
+        "from": 2019
+      }
+    ]
+  },
+  "education": {
+    "events": [
+      {
+        "name": "Master 2 Web Informatique et Connaissances",
+        "supplement": "Alternance",
+        "iconInfos": [
+          {
+            "label": "Université Grenoble Alpes",
+            "icon": "school"
+          },
+          {
+            "label": "Grenoble",
+            "icon": "place"
+          }
+        ],
+        "from": 2016,
+        "to": 2017
+      },
+      {
+        "name": "Licence Professionnelle Systèmes Informatiques et Logiciels",
+        "supplement": "Alternance",
+        "iconInfos": [
+          {
+            "label": "Université Grenoble Alpes",
+            "icon": "school"
+          },
+          {
+            "label": "Grenoble",
+            "icon": "place"
+          }
+        ],
+        "from": 2011,
+        "to": 2012
+      },
+      {
+        "name": "BTS Informatique de Gestion",
+        "supplement": "Alternance",
+        "iconInfos": [
+          {
+            "label": "MFR",
+            "icon": "school"
+          },
+          {
+            "label": "Saint Egreve",
+            "icon": "place"
+          }
+        ],
+        "from": 2009,
+        "to": 2011
+      },
+      {
+        "name": "Bac Scientifique",
+        "iconInfos": [
+          {
+            "label": "Lycee Jean Prevost",
+            "icon": "school"
+          },
+          {
+            "label": "Villard de Lans",
+            "icon": "place"
+          }
+        ],
+        "from": 2009,
+        "to": 2009
+      }
+    ]
+  },
+  "hobbies": [
+    {
+      "label": "Skiing",
+      "icon": "skiing"
+    },
+    {
+      "label": "Climbing",
+      "icon": "climbing"
+    },
+    {
+      "label": "Mountain biking",
+      "icon": "biking"
+    },
+    {
+      "label": "Playing guitar",
+      "icon": "guitar"
+    },
+    {
+      "label": "Travel",
+      "icon": "travel"
+    },
+    {
+      "label": "Coding",
+      "icon": "coding"
+    },
+    {
+      "label": "Playing board games / RPG",
+      "icon": "game"
+    },
+    {
+      "label": "Playing video games",
+      "icon": "videogame"
+    },
+    {
+      "label": "Watching movies & series",
+      "icon":  "tv"
+    }
+  ]
+}
