@@ -1,0 +1,102 @@
+﻿@import "Theme.scss";
+@import "../Pages/Home/Home.scss";
+@import "../Pages/Home/Components/Aboutme/AboutmeComponent.scss";
+@import "../Pages/Home/Components/Skill/SkillComponent.scss";
+@import "../Pages/Home/Components/Hobbies/HobbiesComponent.scss";
+@import "../Pages/Home/Components/Aboutme/AboutmeComponent.scss";
+@import "../Pages/Home/Components/Timeline/TimelineComponent.scss";
+
+html, body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    height: 100%;
+    background-color: $white-color;
+    scrollbar-width: thin;
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $lightgrey-color;
+    }
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+app {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#loading {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        background: radial-gradient(100px 100px at calc(50% - 30px) calc(50% - 20px), $primary-color, transparent), radial-gradient(100px 100px at calc(50% + 30px) calc(50% - 20px), $secondary-color, transparent), radial-gradient(100px 100px at 50% calc(50% + 40px), $tertiary-color, transparent);
+        height: 300px;
+        width: 300px;
+        animation: 2s linear infinite;
+        animation-name: rotation;
+
+        @media (max-width: 576px) {
+            background: radial-gradient(50px 50px at calc(50% - 15px) calc(50% - 10px), $primary-color, transparent), radial-gradient(50px 50px at calc(50% + 15px) calc(50% - 10px), $secondary-color, transparent), radial-gradient(50px 50px at 50% calc(50% + 20px), $tertiary-color, transparent);
+        }
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(365deg)
+        }
+    }
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+/* Rules for sizing the icon. */
+.material-icons-outlined.md-18 {
+    font-size: 18px;
+}
+
+.material-icons-outlined.md-24 {
+    font-size: 24px;
+}
+
+.material-icons-outlined.md-36 {
+    font-size: 36px;
+}
+
+.material-icons-outlined.md-48 {
+    font-size: 48px;
+}
