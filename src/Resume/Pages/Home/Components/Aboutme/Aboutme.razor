@@ -1,0 +1,53 @@
+﻿@inject NavigationManager NavigationManager
+
+<div class="component-resume-aboutme">
+    <div class="detail">
+        <div class="left-block">
+            <div class="picture">
+                <i class="material-icons-outlined">
+                    person
+                </i>
+            </div>
+            <div class="socials">
+                @foreach (var contact in Contacts)
+                {
+                    <IconButton Icon="@contact.Icon" Title="@contact.Label"
+                        OnClick="(() => NavigateTo(contact.Link))">
+                    </IconButton>
+                }
+            </div>
+            <div class="download">
+                <Button Label="@Translation.DOWNLOAD_RESUME" Icon="cloud_download"
+                    OnClick="DownloadResume">
+                </Button>
+            </div>
+        </div>
+        <div class="right-block">
+            <p>Hi,</p>
+            <p>
+                @About
+            </p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Picture { get; set; }
+    [Parameter]
+    public string About { get; set; }
+    [Parameter]
+    public ContactViewModel[] Contacts { get; set; }
+    [Parameter]
+    public Translation Translation { get; set; }
+
+    void NavigateTo(string url)
+    {
+        NavigationManager.NavigateTo(url);
+    }
+
+    void DownloadResume()
+    {
+
+    }
+}

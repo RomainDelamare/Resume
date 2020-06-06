@@ -1,0 +1,93 @@
+﻿@page "/"
+@inject HttpClient Http
+@inject II18nService i18nService;
+
+@if (resume != null && translation != null)
+{
+    <div id="page-resume">
+        <div id="block-name" class="block">
+            <span id="name">@resume.Name</span>
+            <span id="job-position">@resume.JobPosition</span>
+        </div>
+        <div id="block-aboutme" class="block">
+            <h1>@translation.ABOUT_ME</h1>
+            <Aboutme Picture="@resume.Picture" About="@resume.Aboutme" Contacts="@resume.Contacts" Translation="@translation" />
+        </div>
+        <div id="block-skill" class="block">
+            <h1>@translation.SKILLS</h1>
+            <div class="container-skill">
+                @foreach (SkillViewModel skill in resume.Skills)
+                {
+                    <Skill Label="@skill.Label" Percentage="@skill.Percentage" />
+                }
+            </div>
+        </div>
+        <div id="block-experience" class="block">
+            <h1>@translation.EXPERIENCES</h1>
+            <Timeline TimelineData="resume.Experience" />
+        </div>
+        <div id="block-education" class="block">
+            <h1>@translation.EDUCATIONS_AND_DIPLOMAS</h1>
+            <Timeline TimelineData="resume.Education" />
+        </div>
+        <div id="block-hobbies" class="block">
+            <h1>@translation.HOBBIES</h1>
+            <Hobbies HobbiesData="resume.Hobbies" />
+        </div>
+        <div id="block-language" class="block">
+
+        </div>
+        <footer>
+            <div class="language">
+                <div class="label">
+                    @translation.SWITCH_LANGUAGE
+                </div>
+                <div>
+                    <input type="image" alt="Français" src="images/flags/fr.svg" @onclick="@(async () => await ChangeLanguage("fr"))">
+                    <input type="image" alt="English" src="images/flags/us.svg" @onclick="@(async () => await ChangeLanguage("en"))">
+                </div>
+            </div>
+            <div class="attributions">
+                <span>
+                    Attributions :
+                    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    /
+                    Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+}
+
+@code {
+    private ResumeViewModel resume;
+    private Translation translation;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task ChangeLanguage(string lang)
+    {
+        await i18nService.SetLang(lang);
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        var lang = await i18nService.GetLang();
+        await LoadI18n(lang);
+        await LoadResume(lang);
+    }
+
+    private async Task LoadResume(string lang)
+    {
+        resume = await Http.GetFromJsonAsync<ResumeViewModel>($"data/resume/resume_{lang}.json");
+    }
+
+    private async Task LoadI18n(string lang)
+    {
+        translation = await Http.GetFromJsonAsync<Translation>($"data/i18n/{lang}.json");
+    }
+}
