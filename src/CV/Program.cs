@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Blazored.LocalStorage;
+using CV.Services;
 
 namespace CV
 {
@@ -20,7 +21,8 @@ namespace CV
 
             builder.Services
                 .AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) })
-                .AddBlazoredLocalStorage();
+                .AddBlazoredLocalStorage()
+                .AddScoped<II18nService, I18nService>(); ;
 
             await builder.Build().RunAsync();
         }
