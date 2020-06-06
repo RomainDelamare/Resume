@@ -4,18 +4,11 @@
     flex-grow: 1;
     background-color: $white-color;
     background: radial-gradient(50% 300px at 0% 0%, $primary-color, transparent), radial-gradient(50% 300px at 100% 0%, $secondary-color, transparent), radial-gradient(50% 300px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 150px at 100% 100%, $primary-color, transparent), radial-gradient(50% 150px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 150px at 50% 100%, $tertiary-color, transparent);
+    animation-duration: 2s;
+    animation-name: page-appear;
 
     @media (max-width: 576px) {
         background: radial-gradient(50% 200px at 0% 0%, $primary-color, transparent), radial-gradient(50% 200px at 100% 0%, $secondary-color, transparent), radial-gradient(75% 200px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 150px at 100% 100%, $primary-color, transparent), radial-gradient(50% 150px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 150px at 50% 100%, $tertiary-color, transparent);
-    }
-
-    &.page-cv-not-loaded {
-        opacity: 0;
-    }
-
-    &.page-cv-loaded {
-        animation-duration: 2s;
-        animation-name: page-appear;
     }
 
     .block {

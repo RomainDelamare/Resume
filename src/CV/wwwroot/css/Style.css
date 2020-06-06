@@ -1,15 +1,12 @@
 ﻿#page-cv {
   flex-grow: 1;
   background-color: #F8F8FF;
-  background: radial-gradient(50% 300px at 0% 0%, #673AB7, transparent), radial-gradient(50% 300px at 100% 0%, #D81B60, transparent), radial-gradient(50% 300px at 50% 0%, #FDD835, transparent), radial-gradient(50% 150px at 100% 100%, #673AB7, transparent), radial-gradient(50% 150px at 0% 100%, #D81B60, transparent), radial-gradient(50% 150px at 50% 100%, #FDD835, transparent); }
+  background: radial-gradient(50% 300px at 0% 0%, #673AB7, transparent), radial-gradient(50% 300px at 100% 0%, #D81B60, transparent), radial-gradient(50% 300px at 50% 0%, #FDD835, transparent), radial-gradient(50% 150px at 100% 100%, #673AB7, transparent), radial-gradient(50% 150px at 0% 100%, #D81B60, transparent), radial-gradient(50% 150px at 50% 100%, #FDD835, transparent);
+  animation-duration: 2s;
+  animation-name: page-appear; }
   @media (max-width: 576px) {
     #page-cv {
       background: radial-gradient(50% 200px at 0% 0%, #673AB7, transparent), radial-gradient(50% 200px at 100% 0%, #D81B60, transparent), radial-gradient(75% 200px at 50% 0%, #FDD835, transparent), radial-gradient(50% 150px at 100% 100%, #673AB7, transparent), radial-gradient(50% 150px at 0% 100%, #D81B60, transparent), radial-gradient(50% 150px at 50% 100%, #FDD835, transparent); } }
-  #page-cv.page-cv-not-loaded {
-    opacity: 0; }
-  #page-cv.page-cv-loaded {
-    animation-duration: 2s;
-    animation-name: page-appear; }
   #page-cv .block {
     padding: 30px 50px; }
     @media (max-width: 576px) {
