@@ -1,4 +1,48 @@
-﻿#page-cv {
+﻿.component-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #F8F8FF;
+  background-color: #673AB7;
+  padding-right: 16px;
+  height: 36px;
+  border-radius: 5px;
+  transition: 0.5s;
+  min-width: 64px;
+  cursor: pointer; }
+  .component-button.without-icon {
+    padding-left: 16px; }
+  .component-button.with-icon {
+    padding-left: 12px; }
+    .component-button.with-icon .label {
+      margin-left: 8px; }
+  .component-button:hover, .component-button:focus {
+    text-decoration: none;
+    outline: none;
+    opacity: 0.8; }
+
+.component-icon-button {
+  color: #673AB7;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: 0%;
+  font-size: 18px; }
+  .component-icon-button:hover, .component-icon-button:focus {
+    text-decoration: none;
+    outline: none;
+    background-color: rgba(103, 58, 183, 0.1); }
+
+#page-cv {
   flex-grow: 1;
   background-color: #F8F8FF;
   background: radial-gradient(50% 300px at 0% 0%, #673AB7, transparent), radial-gradient(50% 300px at 100% 0%, #D81B60, transparent), radial-gradient(50% 300px at 50% 0%, #FDD835, transparent), radial-gradient(50% 150px at 100% 100%, #673AB7, transparent), radial-gradient(50% 150px at 0% 100%, #D81B60, transparent), radial-gradient(50% 150px at 50% 100%, #FDD835, transparent);
@@ -87,8 +131,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: double 5px transparent;
     background-image: linear-gradient(#F8F8FF, #F8F8FF), radial-gradient(circle at top left, #D81B60, #FDD835);
@@ -100,38 +144,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px; }
-    .component-cv-aboutme .left-block .socials a {
-      color: #673AB7;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 0.3s; }
-      .component-cv-aboutme .left-block .socials a:hover, .component-cv-aboutme .left-block .socials a:focus {
-        text-decoration: none;
-        outline: none;
-        transform: scale(1.2);
-        color: #7e57c2; }
-  .component-cv-aboutme .left-block .download button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    color: #F8F8FF;
-    background-color: #673AB7;
-    padding: 5px 10px;
-    height: 30px;
-    border-radius: 15px;
-    transition: 0.5s; }
-    .component-cv-aboutme .left-block .download button span {
-      margin: 0px 8px 0px 0px; }
-    .component-cv-aboutme .left-block .download button:hover, .component-cv-aboutme .left-block .download button:focus {
-      text-decoration: none;
-      outline: none;
-      background-color: #7e57c2; }
 
 .component-cv-aboutme .right-block {
   text-align: justify;
@@ -231,8 +243,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: double 5px transparent;
     background-image: linear-gradient(#F8F8FF, #F8F8FF), radial-gradient(circle at top left, #D81B60, #FDD835);
@@ -244,38 +256,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px; }
-    .component-cv-aboutme .left-block .socials a {
-      color: #673AB7;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 0.3s; }
-      .component-cv-aboutme .left-block .socials a:hover, .component-cv-aboutme .left-block .socials a:focus {
-        text-decoration: none;
-        outline: none;
-        transform: scale(1.2);
-        color: #7e57c2; }
-  .component-cv-aboutme .left-block .download button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    color: #F8F8FF;
-    background-color: #673AB7;
-    padding: 5px 10px;
-    height: 30px;
-    border-radius: 15px;
-    transition: 0.5s; }
-    .component-cv-aboutme .left-block .download button span {
-      margin: 0px 8px 0px 0px; }
-    .component-cv-aboutme .left-block .download button:hover, .component-cv-aboutme .left-block .download button:focus {
-      text-decoration: none;
-      outline: none;
-      background-color: #7e57c2; }
 
 .component-cv-aboutme .right-block {
   text-align: justify;

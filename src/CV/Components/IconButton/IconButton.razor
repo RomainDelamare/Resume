@@ -1,0 +1,12 @@
+﻿<button alt="@Title" title="@Title" class="component-icon-button" @onclick="OnClick">
+    <i class="fab @Icon fa-lg"></i>
+</button>
+
+@code {
+    [Parameter]
+    public string Icon { get; set; }
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+}

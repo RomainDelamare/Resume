@@ -1,0 +1,19 @@
+﻿<button type="button" class="component-button @(Icon == null ? "without-icon" : "with-icon")"
+    @onclick="@OnClick">
+    @if (Icon != null)
+    {
+        <span class="material-icons-outlined md-18">
+            @Icon
+        </span>
+    }
+    <span class="label">@Label</span>
+</button>
+
+@code {
+    [Parameter]
+    public string Label { get; set; }
+    [Parameter]
+    public string Icon { get; set; }
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+}
