@@ -14,5 +14,7 @@ namespace Resume
         public string HOBBIES { get; set; }
         public string DOWNLOAD_RESUME { get; set; }
         public string SWITCH_LANGUAGE { get; set; }
+        public string YEARS { get; set; }
+        public string TECHNICAL_ENVIRONMENT { get; set; }
     }
 }

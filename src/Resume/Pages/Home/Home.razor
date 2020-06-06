@@ -11,7 +11,8 @@
         </div>
         <div id="block-aboutme" class="block">
             <h1>@translation.ABOUT_ME</h1>
-            <Aboutme Picture="@resume.Picture" About="@resume.Aboutme" Contacts="@resume.Contacts" Translation="@translation" />
+            <Aboutme Picture="@resume.Picture" About="@resume.Aboutme" Location="@resume.Location"
+                Birthday="@resume.Birthday" Contacts="@resume.Contacts" Translation="@translation" />
         </div>
         <div id="block-skill" class="block">
             <h1>@translation.SKILLS</h1>
@@ -24,11 +25,11 @@
         </div>
         <div id="block-experience" class="block">
             <h1>@translation.EXPERIENCES</h1>
-            <Timeline TimelineData="resume.Experience" />
+            <Timeline TimelineData="resume.Experience" Translation="@translation"/>
         </div>
         <div id="block-education" class="block">
             <h1>@translation.EDUCATIONS_AND_DIPLOMAS</h1>
-            <Timeline TimelineData="resume.Education" />
+            <Timeline TimelineData="resume.Education" Translation="@translation"/>
         </div>
         <div id="block-hobbies" class="block">
             <h1>@translation.HOBBIES</h1>

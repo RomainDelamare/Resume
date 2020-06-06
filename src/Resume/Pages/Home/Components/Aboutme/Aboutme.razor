@@ -1,39 +1,52 @@
 ﻿@inject NavigationManager NavigationManager
 
 <div class="component-resume-aboutme">
-    <div class="detail">
-        <div class="left-block">
-            <div class="picture">
-                <i class="material-icons-outlined">
-                    person
-                </i>
-            </div>
-            <div class="socials">
-                @foreach (var contact in Contacts)
-                {
-                    <IconButton Icon="@contact.Icon" Title="@contact.Label"
-                        OnClick="(() => NavigateTo(contact.Link))">
-                    </IconButton>
-                }
-            </div>
-            <div class="download">
-                <Button Label="@Translation.DOWNLOAD_RESUME" Icon="cloud_download"
+    <div class="about-picture">
+        <div class="picture">
+            <i class="material-icons-outlined">
+                person
+            </i>
+        </div>
+    </div>
+    <div class="about-details">
+        <div class="item-with-icon item">
+            <i class="material-icons-outlined md-18">
+                place
+            </i>
+            <span>@Location</span>
+        </div>
+        <div class="item-with-icon item">
+            <i class="material-icons-outlined md-18">
+                cake
+            </i>
+            <span>@GetAge(Birthday) @Translation.YEARS</span>
+        </div>
+        <div class="socials item">
+            @foreach (var contact in Contacts)
+            {
+                <IconButton Icon="@contact.Icon" Title="@contact.Label"
+                            OnClick="(() => NavigateTo(contact.Link))">
+                </IconButton>
+            }
+        </div>
+        <div class="download item">
+            <Button Label="@Translation.DOWNLOAD_RESUME" Icon="cloud_download"
                     OnClick="DownloadResume">
-                </Button>
-            </div>
+            </Button>
         </div>
-        <div class="right-block">
-            <p>Hi,</p>
-            <p>
-                @About
-            </p>
-        </div>
+    </div>
+    <div class="about-text">
+        @About
     </div>
 </div>
 
 @code {
     [Parameter]
     public string Picture { get; set; }
+    [Parameter]
+    public string Location { get; set; }
+    [Parameter]
+    public DateTime Birthday { get; set; }
     [Parameter]
     public string About { get; set; }
     [Parameter]
@@ -49,5 +62,13 @@
     void DownloadResume()
     {
 
+    }
+
+    int GetAge(DateTime birthdate)
+    {
+        var today = DateTime.Today;
+        var age = today.Year - birthdate.Year;
+        if (birthdate.Date > today.AddYears(-age)) age--;
+        return age;
     }
 }

@@ -1,10 +1,14 @@
-﻿namespace Resume.Pages.Home.Models
+﻿using System;
+
+namespace Resume.Pages.Home.Models
 {
     public class ResumeViewModel
     {
         public string Name { get; set; }
         public string JobPosition { get; set; }
         public string Picture { get; set; }
+        public string Location { get; set; }
+        public DateTime Birthday { get; set; }
         public string Aboutme { get; set; }
         public ContactViewModel[] Contacts { get; set; }
         public SkillViewModel[] Skills { get; set; }
@@ -43,6 +47,7 @@
         public string Supplement { get; set; }
         public IconInfoViewModel[] IconInfos { get; set; }
         public string Description { get; set; }
+        public string[] TechnicalEnvironments { get; set; }
         public int From { get; set; }
         public int? To { get; set; }
     }

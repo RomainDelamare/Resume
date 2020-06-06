@@ -2,6 +2,8 @@
   "name": "Romain Delamare",
   "jobPosition": "Développeur web",
   "picture": "",
+  "location": "Montpellier",
+  "birthday": "1991-10-19",
   "aboutme": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem.",
   "contacts": [
     {
@@ -42,9 +44,7 @@
     "events": [
       {
         "name": "Developpeur Fullstack .Net/Angular",
-        "supplement": "Independant",
-        "place": "Studi",
-        "city": "Montpellier",
+        "supplement": "Indépendant",
         "iconInfos": [
           {
             "label": "Studi",
@@ -63,8 +63,199 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<ul><li>test</li><li>test2</li></ul>",
+        "description": "<p>A rédiger</p>",
+        "technicalEnvironments": [ "C#", ".Net Core", ".Net framework", "Angular", "SQL Server", "MySQL", "Git" ],
         "from": 2019
+      },
+      {
+        "name": "Ingénieur développement .Net",
+        "supplement": "Indépendant",
+        "iconInfos": [
+          {
+            "label": "Smile",
+            "icon": "domain"
+          },
+          {
+            "label": "Montpellier",
+            "icon": "place"
+          },
+          {
+            "label": "Équipe : 3 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "ESN",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p>Je faisait partie de l'équipe qui développe l'ERP de l'entreprise</p><p><ul><li>Développement</li><li>Maintenance</li></ul></p>",
+        "technicalEnvironments": [ "C#", "ASP.Net", "VB", ".Net framework", "SQL Server", "HTML", "CSS", "Javascript", "Git" ],
+        "from": 2018,
+        "to": 2019
+      },
+      {
+        "name": "Ingénieur développement",
+        "supplement": "Indépendant",
+        "iconInfos": [
+          {
+            "label": "Atos",
+            "icon": "domain"
+          },
+          {
+            "label": "Client : Armée de terre",
+            "icon": "domain"
+          },
+          {
+            "label": "Montpellier",
+            "icon": "place"
+          },
+          {
+            "label": "Équipe : 7 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "Projet : 100 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "ESN",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p>Lors de mon passage en indépendant, j'ai voulu découvrir une technologie que je n'avais utilisé seulement pendant mes études dans le monde professionnel.</p><p><ul><li>Développement</li><li>Maintenance</li></ul></p>",
+        "technicalEnvironments": [ "Java", "PostgreSQL", "Git" ],
+        "from": 2018,
+        "to": 2018
+      },
+      {
+        "name": "Ingénieur développement .Net",
+        "supplement": "CDI",
+        "iconInfos": [
+          {
+            "label": "Smag",
+            "icon": "domain"
+          },
+          {
+            "label": "Montpellier",
+            "icon": "place"
+          },
+          {
+            "label": "Équipe : 5 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "Projet : 30 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "Éditeur de logiciel",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p>Le logiciel est composé d'un framework ainsi que de développements spécifiques pour les différentes filières agricoles. Je faisais parti de l'équipe développant le framework.</p><p>L'équipe travaillait en agilité</p><p><ul><li>Développement</li><li>Maintenance</li><li>Tests de performance</li></ul></p>",
+        "technicalEnvironments": [ "C#", "ASP.Net", ".Net framework", "SQL Server", "HTML", "CSS", "Javascript", "ExtJS", "SVN" ],
+        "from": 2017,
+        "to": 2018
+      },
+      {
+        "name": "Ingénieur développement .Net",
+        "supplement": "Alternance",
+        "iconInfos": [
+          {
+            "label": "Sopra Steria",
+            "icon": "domain"
+          },
+          {
+            "label": "Client : Sofradir & Ulis",
+            "icon": "domain"
+          },
+          {
+            "label": "Grenoble",
+            "icon": "place"
+          },
+          {
+            "label": "Équipe : 7 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "ESN",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p>Le logiciel sur lequel j'ai travaillé était le MES (Manufacturing Execution System) permettant de gérer la chaine de production de l'entreprise.</p><p>Le projet était organisé en agilité grâce à la méthode Scrum</p><p><ul><li>Développements</li><li>Tests unitaires</li></ul></p>",
+        "technicalEnvironments": [ "C#", "VB", ".Net framework", "Oracle Database", "TFS" ],
+        "from": 2016,
+        "to": 2017
+      },
+      {
+        "name": "Développeur Web .Net",
+        "supplement": "CDI",
+        "iconInfos": [
+          {
+            "label": "Imail",
+            "icon": "domain"
+          },
+          {
+            "label": "Grenoble",
+            "icon": "place"
+          },
+          {
+            "label": "Équipe : 3 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "Éditeur de logiciel",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p>Imail est spécialisé dans les logiciels dans le domaine du handicap. Les clients sont des entreprises françaises de grande taille (Atos, Capgemini, Thales, Safran, Air Liquide, Areva, ...)</p><p>L'équipe est en charge de l'ensemble du cycle de vie du logiciel. J'ai à ce poste eu la résponsabilité des tâches suivantes :<ul><li>Conception</li><li>Développements</li><li>Maintenance</li><li>Hotline</li><li>Formation utilisateurs</li></ul></p>",
+        "technicalEnvironments": [ "C#", "ASP.Net", ".Net framework", "SQL Server", "HTML", "CSS/SCSS", "Boostrap", "Javascript", "TFS" ],
+        "from": 2013,
+        "to": 2016
+      },
+      {
+        "name": "Technicien informatique / Développeur Web",
+        "supplement": "Alternance",
+        "iconInfos": [
+          {
+            "label": "Netquattro",
+            "icon": "domain"
+          },
+          {
+            "label": "Voiron",
+            "icon": "place"
+          },
+          {
+            "label": "E-commerce",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p><ul><li>Administration systèmes et réseaux</li><li>Intégration d'un site de e-commerce</li></ul></p>",
+        "technicalEnvironments": [ "HTML", "CSS", "Javascript", "Windows" ],
+        "from": 2011,
+        "to": 2012
+      },
+      {
+        "name": "Technicien informatique",
+        "supplement": "Alternance",
+        "iconInfos": [
+          {
+            "label": "ESRF",
+            "icon": "domain"
+          },
+          {
+            "label": "Grenoble",
+            "icon": "place"
+          },
+          {
+            "label": "Centre de recherche",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p>Administration systèmes et réseaux</p>",
+        "technicalEnvironments": [ "Windows", "Linux" ],
+        "from": 2009,
+        "to": 2011
       }
     ]
   },

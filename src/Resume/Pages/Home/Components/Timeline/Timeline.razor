@@ -36,6 +36,16 @@
                 <div class="description">
                     @((MarkupString)@timelineEvent.Description)
                 </div>
+                @if (timelineEvent.TechnicalEnvironments != null && timelineEvent.TechnicalEnvironments.Length > 0)
+                {
+                    <div class="technical-environment">
+                        <span class="label">@Translation.TECHNICAL_ENVIRONMENT</span> :
+                        @foreach (var item in timelineEvent.TechnicalEnvironments)
+                        {
+                            <span class="item">@item</span>
+                        }
+                    </div>
+                }
             </div>
         </div>
     }
@@ -44,4 +54,6 @@
 @code {
     [Parameter]
     public TimelineViewModel TimelineData { get; set; }
+    [Parameter]
+    public Translation Translation { get; set; }
 }
