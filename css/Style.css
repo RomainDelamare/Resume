@@ -1,4 +1,5 @@
-﻿.component-button {
+﻿@charset "UTF-8";
+.component-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,7 +37,7 @@
   cursor: pointer;
   background-color: transparent;
   background-size: 0%;
-  font-size: 18px; }
+  font-size: 14px; }
   .component-icon-button:hover, .component-icon-button:focus {
     text-decoration: none;
     outline: none;
@@ -120,35 +121,52 @@
   to {
     opacity: 1; } }
 
-.component-resume-aboutme .left-block {
-  float: left;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .component-resume-aboutme .left-block .picture {
+.component-resume-aboutme {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: start; }
+  @media (max-width: 576px) {
+    .component-resume-aboutme {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto); }
+      .component-resume-aboutme .about-text {
+        grid-column: 1 / span 2; } }
+  .component-resume-aboutme .about-picture {
+    float: left;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: double 5px transparent;
-    background-image: linear-gradient(#F8F8FF, #F8F8FF), radial-gradient(circle at top left, #D81B60, #FDD835);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    justify-content: center; }
+    .component-resume-aboutme .about-picture .picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: double 5px transparent;
+      background-image: linear-gradient(#F8F8FF, #F8F8FF), radial-gradient(circle at top left, #D81B60, #FDD835);
+      background-origin: border-box;
+      background-clip: content-box, border-box; }
+  .component-resume-aboutme .about-details .item {
     margin-bottom: 10px; }
-  .component-resume-aboutme .left-block .socials {
+  .component-resume-aboutme .about-details .socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px; }
-
-.component-resume-aboutme .right-block {
-  text-align: justify;
-  font-style: italic;
-  color: #888888; }
+    margin-left: -9px; }
+  .component-resume-aboutme .about-details .item-with-icon i {
+    vertical-align: middle;
+    color: #D81B60; }
+  .component-resume-aboutme .about-details .item-with-icon span {
+    vertical-align: middle;
+    font-style: italic;
+    font-weight: 300; }
+  .component-resume-aboutme .about-text {
+    text-align: justify;
+    font-style: italic;
+    color: #888888; }
 
 .component-resume-skill {
   display: flex;
@@ -232,35 +250,52 @@
         border-style: solid;
         border-color: transparent transparent #673AB7 transparent; }
 
-.component-resume-aboutme .left-block {
-  float: left;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .component-resume-aboutme .left-block .picture {
+.component-resume-aboutme {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: start; }
+  @media (max-width: 576px) {
+    .component-resume-aboutme {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto); }
+      .component-resume-aboutme .about-text {
+        grid-column: 1 / span 2; } }
+  .component-resume-aboutme .about-picture {
+    float: left;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: double 5px transparent;
-    background-image: linear-gradient(#F8F8FF, #F8F8FF), radial-gradient(circle at top left, #D81B60, #FDD835);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    justify-content: center; }
+    .component-resume-aboutme .about-picture .picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: double 5px transparent;
+      background-image: linear-gradient(#F8F8FF, #F8F8FF), radial-gradient(circle at top left, #D81B60, #FDD835);
+      background-origin: border-box;
+      background-clip: content-box, border-box; }
+  .component-resume-aboutme .about-details .item {
     margin-bottom: 10px; }
-  .component-resume-aboutme .left-block .socials {
+  .component-resume-aboutme .about-details .socials {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px; }
-
-.component-resume-aboutme .right-block {
-  text-align: justify;
-  font-style: italic;
-  color: #888888; }
+    margin-left: -9px; }
+  .component-resume-aboutme .about-details .item-with-icon i {
+    vertical-align: middle;
+    color: #D81B60; }
+  .component-resume-aboutme .about-details .item-with-icon span {
+    vertical-align: middle;
+    font-style: italic;
+    font-weight: 300; }
+  .component-resume-aboutme .about-text {
+    text-align: justify;
+    font-style: italic;
+    color: #888888; }
 
 .component-timeline .timeline-event {
   display: flex;
@@ -306,7 +341,7 @@
     animation-name: bulletappearin; }
   .component-timeline .timeline-event .timeline-content {
     padding-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     flex: 1; }
     @media (max-width: 576px) {
       .component-timeline .timeline-event .timeline-content {
@@ -347,6 +382,13 @@
     .component-timeline .timeline-event .timeline-content .description {
       font-size: 0.9em;
       color: #888; }
+    .component-timeline .timeline-event .timeline-content .technical-environment .label {
+      color: #673AB7; }
+    .component-timeline .timeline-event .timeline-content .technical-environment .item:not(:last-of-type):after {
+      content: '•';
+      display: inline-block;
+      color: #673AB7;
+      margin-left: 4px; }
 
 .component-timeline:before, .component-timeline:after {
   content: '';
