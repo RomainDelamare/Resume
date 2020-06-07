@@ -17,6 +17,11 @@
       "icon": "fa-github"
     },
     {
+      "link": "https://medium.com/@romaindelamare",
+      "label": "Medium",
+      "icon": "fa-medium-m"
+    },
+    {
       "link": "https://stackoverflow.com/users/13446273/romain",
       "label": "Stack Overflow",
       "icon": "fa-stack-overflow"
