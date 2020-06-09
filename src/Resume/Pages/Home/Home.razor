@@ -2,9 +2,11 @@
 @inject HttpClient Http
 @inject II18nService i18nService;
 
-@if (resume != null && translation != null)
-{
-    <div id="page-resume">
+<div id="page-resume">
+    <div class="primary-background"></div>
+
+    @if (resume != null && translation != null)
+    {
         <div id="block-name" class="block">
             <span id="name">@resume.Name</span>
             <span id="job-position">@resume.JobPosition</span>
@@ -12,7 +14,7 @@
         <div id="block-aboutme" class="block">
             <h1>@translation.ABOUT_ME</h1>
             <Aboutme Picture="@resume.Picture" About="@resume.Aboutme" Location="@resume.Location"
-                Birthday="@resume.Birthday" Contacts="@resume.Contacts" Translation="@translation" />
+                     Birthday="@resume.Birthday" Contacts="@resume.Contacts" Translation="@translation" />
         </div>
         <div id="block-skill" class="block">
             <h1>@translation.SKILLS</h1>
@@ -25,11 +27,11 @@
         </div>
         <div id="block-experience" class="block">
             <h1>@translation.EXPERIENCES</h1>
-            <Timeline TimelineData="resume.Experience" Translation="@translation"/>
+            <Timeline TimelineData="resume.Experience" Translation="@translation" />
         </div>
         <div id="block-education" class="block">
             <h1>@translation.EDUCATIONS_AND_DIPLOMAS</h1>
-            <Timeline TimelineData="resume.Education" Translation="@translation"/>
+            <Timeline TimelineData="resume.Education" Translation="@translation" />
         </div>
         <div id="block-hobbies" class="block">
             <h1>@translation.HOBBIES</h1>
@@ -57,8 +59,8 @@
                 </span>
             </div>
         </footer>
-    </div>
-}
+    }
+</div>
 
 @code {
     private ResumeViewModel resume;

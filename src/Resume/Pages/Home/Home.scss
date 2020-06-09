@@ -3,12 +3,23 @@
 #page-resume {
     flex-grow: 1;
     background-color: $white-color;
-    background: radial-gradient(50% 300px at 0% 0%, $primary-color, transparent), radial-gradient(50% 300px at 100% 0%, $secondary-color, transparent), radial-gradient(50% 300px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 150px at 100% 100%, $primary-color, transparent), radial-gradient(50% 150px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 150px at 50% 100%, $tertiary-color, transparent);
     animation-duration: 2s;
     animation-name: page-appear;
 
-    @media (max-width: 576px) {
-        background: radial-gradient(50% 200px at 0% 0%, $primary-color, transparent), radial-gradient(50% 200px at 100% 0%, $secondary-color, transparent), radial-gradient(75% 200px at 50% 0%, $tertiary-color, transparent), radial-gradient(50% 150px at 100% 100%, $primary-color, transparent), radial-gradient(50% 150px at 0% 100%, $secondary-color, transparent), radial-gradient(50% 150px at 50% 100%, $tertiary-color, transparent);
+    .primary-background {
+        position: absolute;
+        width: 150%;
+        border-bottom-left-radius: 50% 100%;
+        border-bottom-right-radius: 50% 100%;
+        margin-left: -25%;
+        height: 200px;
+        background-color: $primary-color;
+        z-index: 2;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+        @media (max-width: 576px) {
+            height: 160px;
+        }
     }
 
     .block {
@@ -30,12 +41,19 @@
     }
 
     #block-name {
-        height: 200px;
+        height: 140px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: $primary-color;
+        color: $white-color;
         text-align: center;
+        position: relative;
+        z-index: 5;
+
+        @media (max-width: 576px) {
+            height: 120px;
+            margin-bottom: 40px;
+        }
 
         #name {
             font-size: 40px;
@@ -68,6 +86,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: $primary-color;
+        color: $white-color;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
         @media (max-width: 576px) {
             padding: 10px;
@@ -82,7 +103,6 @@
 
             .label {
                 margin-bottom: 10px;
-                color: $primary-color;
             }
 
             input {
@@ -102,6 +122,10 @@
 
         .attributions {
             font-size: 0.7em;
+
+            a {
+                color: $tertiary-color;
+            }
         }
     }
 

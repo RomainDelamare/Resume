@@ -14,10 +14,12 @@ html, body {
     height: 100%;
     background-color: $white-color;
     scrollbar-width: thin;
+    overflow-x: hidden;
 
     ::-webkit-scrollbar {
         width: 8px;
     }
+
     ::-webkit-scrollbar-thumb {
         background: $lightgrey-color;
     }
@@ -39,31 +41,84 @@ app {
     flex-direction: column;
 }
 
-#loading {
+#loading-wrapper {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    div {
-        background: radial-gradient(100px 100px at calc(50% - 30px) calc(50% - 20px), $primary-color, transparent), radial-gradient(100px 100px at calc(50% + 30px) calc(50% - 20px), $secondary-color, transparent), radial-gradient(100px 100px at 50% calc(50% + 40px), $tertiary-color, transparent);
-        height: 300px;
-        width: 300px;
-        animation: 2s linear infinite;
-        animation-name: rotation;
+    #loading {
+        position: relative;
+        width: 80px;
+        height: 80px;
 
-        @media (max-width: 576px) {
-            background: radial-gradient(50px 50px at calc(50% - 15px) calc(50% - 10px), $primary-color, transparent), radial-gradient(50px 50px at calc(50% + 15px) calc(50% - 10px), $secondary-color, transparent), radial-gradient(50px 50px at 50% calc(50% + 20px), $tertiary-color, transparent);
+        div {
+            position: absolute;
+            background-color: $primary-color;
+            top: 33px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+            animation: loader-animation 0.1s cubic-bezier(0, 0.2, 0.8, 1)
         }
-    }
 
-    @keyframes rotation {
-        from {
-            transform: rotate(0deg)
+        div:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
         }
 
-        to {
-            transform: rotate(365deg)
+        div:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        div:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        div:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+
+        @keyframes lds-ellipsis1 {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes lds-ellipsis3 {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes lds-ellipsis2 {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(24px, 0);
+            }
+        }
+
+        @keyframes loader-animation {
+            0% {
+            }
+
+            100% {
+            }
         }
     }
 }
