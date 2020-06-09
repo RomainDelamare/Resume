@@ -16,8 +16,10 @@ html, body {
     scrollbar-width: thin;
     overflow-x: hidden;
 
-    ::-webkit-scrollbar {
-        width: 8px;
+    @media (min-width: 577px) {
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
     }
 
     ::-webkit-scrollbar-thumb {

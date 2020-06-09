@@ -436,8 +436,9 @@ html, body {
   background-color: #F8F8FF;
   scrollbar-width: thin;
   overflow-x: hidden; }
-  html ::-webkit-scrollbar, body ::-webkit-scrollbar {
-    width: 8px; }
+  @media (min-width: 577px) {
+    html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+      width: 8px; } }
   html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
     background: #CCCCCC; }
 
