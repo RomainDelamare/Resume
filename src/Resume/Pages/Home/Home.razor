@@ -1,6 +1,7 @@
 ﻿@page "/"
 @inject HttpClient Http
 @inject II18nService i18nService;
+@inject IJSRuntime JSRuntime;
 
 <div id="page-resume">
     <div class="primary-background"></div>
@@ -92,5 +93,11 @@
     private async Task LoadI18n(string lang)
     {
         translation = await Http.GetFromJsonAsync<Translation>($"data/i18n/{lang}.json");
+        await ChangeTitle();
+    }
+
+    private async Task ChangeTitle()
+    {
+        await JSRuntime.InvokeVoidAsync("DocumentInterop.setDocumentTitle", "RD - " + translation.RESUME);
     }
 }

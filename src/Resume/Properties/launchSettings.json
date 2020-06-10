@@ -10,9 +10,9 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "commandLineArgs": "--pathbase=/Resume",
+      "commandLineArgs": "--pathbase=/resume",
       "launchBrowser": true,
-      "launchUrl": "Resume",
+      "launchUrl": "resume",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

@@ -7,6 +7,7 @@ namespace Resume
 {
     public class Translation
     {
+        public string RESUME { get; set; }
         public string ABOUT_ME { get; set; }
         public string SKILLS { get; set; }
         public string EXPERIENCES { get; set; }
