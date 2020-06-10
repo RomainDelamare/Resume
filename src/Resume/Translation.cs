@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Resume
+﻿namespace Resume
 {
     public class Translation
     {
@@ -17,5 +12,6 @@ namespace Resume
         public string SWITCH_LANGUAGE { get; set; }
         public string YEARS { get; set; }
         public string TECHNICAL_ENVIRONMENT { get; set; }
+        public string PAGE_TOP { get; set; }
     }
 }

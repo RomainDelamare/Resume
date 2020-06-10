@@ -1,6 +1,7 @@
 ﻿@import "Theme.scss";
 @import "../Components/Button/Button.scss";
 @import "../Components/IconButton/IconButton.scss";
+@import "../Components/FabButton/FabButton.scss";
 @import "../Pages/Home/Home.scss";
 @import "../Pages/Home/Components/Aboutme/Aboutme.scss";
 @import "../Pages/Home/Components/Skill/Skill.scss";
@@ -15,6 +16,7 @@ html, body {
     background-color: $white-color;
     scrollbar-width: thin;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
     @media (min-width: 577px) {
         ::-webkit-scrollbar {

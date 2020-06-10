@@ -8,7 +8,7 @@
 
     @if (resume != null && translation != null)
     {
-        <div id="block-name" class="block">
+        <div id="block-name" class="block" @ref=BlockName>
             <span id="name">@resume.Name</span>
             <span id="job-position">@resume.JobPosition</span>
         </div>
@@ -38,9 +38,6 @@
             <h1>@translation.HOBBIES</h1>
             <Hobbies HobbiesData="resume.Hobbies" />
         </div>
-        <div id="block-language" class="block">
-
-        </div>
         <footer>
             <div class="language">
                 <div class="label">
@@ -60,16 +57,36 @@
                 </span>
             </div>
         </footer>
+
+        <div id="go-top">
+            <FabButton Title="@translation.PAGE_TOP" Icon="keyboard_arrow_up" OnClick="(async () => await ScrollTop())"></FabButton>
+        </div>
     }
+
+
 </div>
 
 @code {
     private ResumeViewModel resume;
     private Translation translation;
+    private bool firstLoadDone = false;
+
+
+    ElementReference BlockName;
 
     protected override async Task OnInitializedAsync()
     {
         await LoadData();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (resume != null && !firstLoadDone)
+        {
+            await JSRuntime.InvokeVoidAsync("IntersectionObserver.initIntersectionObserver");
+            await JSRuntime.InvokeVoidAsync("IntersectionObserver.initIntersectionObserverTopButton", BlockName);
+            firstLoadDone = true;
+        }
     }
 
     private async Task ChangeLanguage(string lang)
@@ -99,5 +116,10 @@
     private async Task ChangeTitle()
     {
         await JSRuntime.InvokeVoidAsync("DocumentInterop.setDocumentTitle", "RD - " + translation.RESUME);
+    }
+
+    private async Task ScrollTop()
+    {
+        await JSRuntime.InvokeVoidAsync("DocumentInterop.scrollTop");
     }
 }

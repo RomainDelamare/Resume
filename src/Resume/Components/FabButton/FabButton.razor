@@ -1,0 +1,14 @@
+﻿<button alt="@Title" title="@Title" class="component-fab-button" @onclick="OnClick">
+    <span class="material-icons-outlined">
+        @Icon
+    </span>
+</button>
+
+@code {
+    [Parameter]
+    public string Icon { get; set; }
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+}

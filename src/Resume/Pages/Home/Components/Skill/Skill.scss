@@ -33,8 +33,15 @@
             position: relative;
             top: -5px;
             background-color: $secondary-color;
-            animation-duration: 2s;
-            animation-name: growin;
+        }
+    }
+
+    &.animate-me.entered {
+        .line2 {
+            .value {
+                animation-duration: 2s;
+                animation-name: growin;
+            }
         }
     }
 

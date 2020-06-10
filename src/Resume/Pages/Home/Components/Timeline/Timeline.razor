@@ -1,7 +1,7 @@
 ﻿<div class="component-timeline">
     @foreach (EventViewModel timelineEvent in @TimelineData.Events)
     {
-        <div class="timeline-event">
+        <div class="timeline-event animate-me">
             <div class="timeline-date">
                 @if (!timelineEvent.To.HasValue)
                 {

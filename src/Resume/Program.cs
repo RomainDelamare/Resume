@@ -1,12 +1,8 @@
 using System;
 using System.Net.Http;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Text;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Blazored.LocalStorage;
 using Resume.Services;
 
@@ -22,7 +18,7 @@ namespace Resume
             builder.Services
                 .AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) })
                 .AddBlazoredLocalStorage()
-                .AddScoped<II18nService, I18nService>(); ;
+                .AddScoped<II18nService, I18nService>();
 
             await builder.Build().RunAsync();
         }
