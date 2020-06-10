@@ -43,6 +43,24 @@
     outline: none;
     background-color: rgba(103, 58, 183, 0.1); }
 
+.component-fab-button {
+  border-radius: 50%;
+  border: none;
+  background-color: #D81B60;
+  color: #F8F8FF;
+  height: 56px;
+  width: 56px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s; }
+  .component-fab-button:hover, .component-fab-button:focus {
+    text-decoration: none;
+    outline: none;
+    opacity: 0.8; }
+
 #page-resume {
   flex-grow: 1;
   background-color: #F8F8FF;
@@ -133,6 +151,16 @@
       font-size: 0.7em; }
       #page-resume footer .attributions a {
         color: #FDD835; }
+  #page-resume #go-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease-in; }
+    #page-resume #go-top.displayed {
+      visibility: visible;
+      opacity: 1; }
 
 @keyframes page-appear {
   from {
@@ -209,9 +237,10 @@
       height: 5px;
       position: relative;
       top: -5px;
-      background-color: #D81B60;
-      animation-duration: 2s;
-      animation-name: growin; }
+      background-color: #D81B60; }
+  .component-resume-skill.animate-me.entered .line2 .value {
+    animation-duration: 2s;
+    animation-name: growin; }
 
 @keyframes growin {
   from {
@@ -356,8 +385,7 @@
     left: -10px;
     top: 3px;
     background-color: #FFFFFF;
-    animation-duration: 2s;
-    animation-name: bulletappearin; }
+    transform: scale(0); }
   .component-timeline .timeline-event .timeline-content {
     padding-left: 10px;
     margin-bottom: 15px;
@@ -408,6 +436,11 @@
       display: inline-block;
       color: #673AB7;
       margin-left: 4px; }
+  .component-timeline .timeline-event.animate-me.entered .timeline-line:before {
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-name: bulletappearin;
+    animation-fill-mode: forwards; }
 
 .component-timeline:before, .component-timeline:after {
   content: '';
@@ -424,9 +457,9 @@
 @keyframes bulletappearin {
   from {
     transform: scale(0); }
-  25% {
-    transform: scale(1.2); }
   50% {
+    transform: scale(1.2); }
+  to {
     transform: scale(1); } }
 
 html, body {
@@ -435,7 +468,8 @@ html, body {
   height: 100%;
   background-color: #F8F8FF;
   scrollbar-width: thin;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
   @media (min-width: 577px) {
     html ::-webkit-scrollbar, body ::-webkit-scrollbar {
       width: 8px; } }
