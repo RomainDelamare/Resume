@@ -10,7 +10,8 @@
   padding-right: 16px;
   height: 36px;
   border-radius: 5px;
-  transition: 0.5s;
+  background-position: center;
+  transition: background 0.5s;
   min-width: 64px;
   cursor: pointer; }
   .component-button.without-icon {
@@ -19,10 +20,13 @@
     padding-left: 12px; }
     .component-button.with-icon .label {
       margin-left: 8px; }
-  .component-button:hover, .component-button:focus {
-    text-decoration: none;
-    outline: none;
-    opacity: 0.8; }
+  .component-button:hover {
+    background: #7e57c2 radial-gradient(circle, transparent 1%, #7e57c2 1%) center/15000%; }
+  .component-button:active {
+    background-color: #9575cd;
+    background-size: 100%;
+    transition: background 0s;
+    outline: none; }
 
 .component-icon-button {
   color: #673AB7;
@@ -55,11 +59,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: 0.5s; }
-  .component-fab-button:hover, .component-fab-button:focus {
-    text-decoration: none;
-    outline: none;
-    opacity: 0.8; }
+  background-position: center;
+  transition: background 0.5s; }
+  .component-fab-button:hover {
+    background: #e91e63 radial-gradient(circle, transparent 1%, #e91e63 1%) center/15000%; }
+  .component-fab-button:active {
+    background-color: #ec407a;
+    background-size: 100%;
+    transition: background 0s;
+    outline: none; }
 
 #page-resume {
   flex-grow: 1;
