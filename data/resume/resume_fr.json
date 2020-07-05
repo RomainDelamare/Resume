@@ -165,7 +165,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p><strong>Mes missions sur AGREO</strong> :<ul><li>Développement de fonctionnalité sur le framework de l’application</li><li>Mise en place de tests de performance</li><li>Correction de bugs</li><li>Tests de performance</li></ul></p><p><strong>Mes tâches marquantes</strong> :<ul><li>Mise en place de tests de performance avec Neoload permettant de détecter des fuites mémoires</li><li>Amélioration des performances d’affichages des parcelles agricoles sur le module de cartographie</li></ul></p><p>L’équipe est organisée autour de la méthodologie scrum.</p><p><span class='underline'>AGREO</span> : Application permettant de gérer des productions agricoles</p>",
+        "description": "<p><strong>Mes missions sur AGREO</strong> :<ul><li>Développement de fonctionnalité sur le framework de l’application</li><li>Mise en place de tests de performance</li><li>Correction de bugs</li></ul></p><p><strong>Mes tâches marquantes</strong> :<ul><li>Mise en place de tests de performance avec Neoload permettant de détecter des fuites mémoires</li><li>Amélioration des performances d’affichages des parcelles agricoles sur le module de cartographie</li></ul></p><p>L’équipe est organisée autour de la méthodologie scrum.</p><p><span class='underline'>AGREO</span> : Application permettant de gérer des productions agricoles</p>",
         "technicalEnvironments": [ "C#", "ASP.Net", ".Net framework", "SQL Server", "HTML", "CSS", "Javascript", "ExtJS", "SVN" ],
         "from": 2017,
         "to": 2018
