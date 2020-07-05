@@ -6,6 +6,7 @@
     column-gap: 20px;
     row-gap: 20px;
     align-items: start;
+    max-width: 1000px;
 
     @media (max-width: 576px) {
         grid-template-columns: repeat(2, auto);
@@ -27,13 +28,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: double 5px transparent;
-            background-image: linear-gradient($white-color, $white-color), radial-gradient(circle at top left, $secondary-color,$tertiary-color);
-            background-origin: border-box;
-            background-clip: content-box, border-box;
+
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
         }
     }
 

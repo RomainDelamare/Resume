@@ -4,7 +4,7 @@
   "picture": "",
   "location": "Montpellier",
   "birthday": "1991-10-19",
-  "aboutme": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem.",
+  "aboutme": "In progress",
   "contacts": [
     {
       "link": "https://www.linkedin.com/in/romain-delamare/",
@@ -70,7 +70,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<ul><li>test</li><li>test2</li></ul>",
+        "description": "In progress",
         "from": 2019
       }
     ]

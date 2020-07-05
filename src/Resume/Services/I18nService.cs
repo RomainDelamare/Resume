@@ -27,15 +27,17 @@ namespace Resume.Services
 
         public async Task<string> GetLang()
         {
-            var lang = await _localStorage.GetItemAsync<string>(LANG_STORAGE_KEY);
-            if (ACCEPTED_LANG.Contains(lang))
-                return lang;
+            // Alway in french until I write the english version
+            //var lang = await _localStorage.GetItemAsync<string>(LANG_STORAGE_KEY);
+            //if (ACCEPTED_LANG.Contains(lang))
+            //    return lang;
 
-            lang = CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
-            if (ACCEPTED_LANG.Contains(lang))
-                return lang;
+            //lang = CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
+            //if (ACCEPTED_LANG.Contains(lang))
+            //    return lang;
 
-            return FALLBACK_LANG;
+            //return FALLBACK_LANG;
+            return "fr";
         }
 
         public async Task SetLang(string lang)

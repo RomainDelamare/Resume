@@ -1,10 +1,10 @@
 {
   "name": "Romain Delamare",
-  "jobPosition": "Développeur web",
+  "jobPosition": "Développeur fullstack .NET Core - Freelance",
   "picture": "",
   "location": "Montpellier",
   "birthday": "1991-10-19",
-  "aboutme": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non arcu sed tellus dignissim feugiat. Duis ac mauris hendrerit tellus pretium congue ut eget dui. Mauris tincidunt ornare mauris, at lacinia metus commodo vitae. Donec in turpis maximus nisl imperdiet tincidunt ac eget lacus. Integer bibendum eros nulla, in lobortis metus sodales sed. Proin in erat in enim maximus gravida. Mauris facilisis dolor varius, luctus lectus sed, maximus massa. Pellentesque at libero augue. Nam vel eros id elit tristique volutpat id eu lorem.",
+  "aboutme": "Je suis un développeur passionné qui cherche constamment à découvrir, apprendre, partager et donner le meilleur de moi même afin de répondre aux besoins métier. La qualité est un point essentiel dans mon travail, c’est pourquoi je respecte les principes SOLID et le clean code. J'essaye également de promouvoir le DDD ainsi que la mise en place de tests unitaires, d'intégration, ...",
   "contacts": [
     {
       "link": "https://www.linkedin.com/in/romain-delamare/",
@@ -29,20 +29,28 @@
   ],
   "skills": [
     {
-      "label": "C#",
+      "label": "C# / .Net",
       "percentage": 90
     },
     {
       "label": "Angular",
-      "percentage": 75
+      "percentage": 80
     },
     {
-      "label": "HTML/CSS",
-      "percentage": 75
+      "label": "HTML / CSS",
+      "percentage": 80
     },
     {
       "label": "Blazor",
-      "percentage": 50
+      "percentage": 70
+    },
+    {
+      "label": "Javascript",
+      "percentage": 70
+    },
+    {
+      "label": "SQL",
+      "percentage": 80
     }
   ],
   "experience": {
@@ -68,7 +76,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p>A rédiger</p>",
+        "description": "<p>Je travail sur le LMS (Learning Management System) de l’entreprise</p><p><strong>Développement</strong> :<ul><li>Développement de nouvelles fonctionnalités</li><li>Refonte de modules</li><li>Amélioration des performances</li><li>Refactorisation</li><li>Intégration de services externes dans l’application pour les besoins des apprenant.e.s (passage de certifications, Github student, Dropbox) ainsi que nos besoins techniques (génération de document avec Carbone.io, hébergement et lecteur vidéo avec JWPlayer)</li><li>Utilisation des principes SOLID et clean code</li><li>Mise en place de tests unitaires</li><li>Correction de bugs</li></ul></p><p><strong>Architecture</strong> : <ul><li>Participation aux réflexions d’architectures des nouveaux développements</li><li>Etude des architectures microservices et monolithe modulaires dans l’optique de faire évoluer l’application actuelle afin de la rendre plus maintenable et scalable</li><li>Migration d’AngularJS vers Angular avec une approche hybride</li><li>Utilisation des patterns DDD (Domain Driven Design) tactiques</li><li>CQRS (Command and Query Responsibility Segregation)</li></ul></p><p><strong>Conception / Modélisation</strong> :<ul><li>Approche orienté domaine métier</li><li>Event storming</li><li>Approche DDD (Domain Driven Design) stratégique.</li></ul></p><p><strong>Encadrement d’un développeur junior</strong> :<ul><li>Rédaction de spécifications techniques</li><li>Suivi quotidien et pair programming</li><li>Validation des développements</li></ul></p><p><strong>Agilité</strong> :<ul><li>Mise en place et animation des rétrospectives</li><li>Systématisation des stand-up daily</li><li>Acteur dans le passage de la méthode Scrum à Kanban, plus adaptée à notre fonctionnement.</li></ul></p><p><span class='underline'>LMS (Learning Management System)</span> : Application permettant aux apprenant.e.s d’accéder à leurs formations, de communiquer entre eux ou avec les formatrices et formateurs. Les équipes internes peuvent également gérer l’ensemble du contenu.</p>",
         "technicalEnvironments": [ "C#", ".Net Core", ".Net framework", "Angular", "SQL Server", "MySQL", "Git" ],
         "from": 2019
       },
@@ -93,7 +101,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p>Je faisait partie de l'équipe qui développe l'ERP de l'entreprise</p><p><ul><li>Développement</li><li>Maintenance</li></ul></p>",
+        "description": "<p><strong>Mes missions sur Gescom</strong> :</p><p><ul><li>Conception et développement de nouvelles fonctionnalités</li><li>Correction de bugs</li></ul></p><p><strong>Projet majeur</strong> : Mise en place d’une interconnexion entre les différentes instances de l’application (une instance par pays), permettant de gérer la sous-traitance de projets entre Smile France et Smile Ukraine et Maroc.</p><p><span class='underline'>Gescom</span> : ERP de l’entreprise développé en interne</p>",
         "technicalEnvironments": [ "C#", "ASP.Net", "VB", ".Net framework", "SQL Server", "HTML", "CSS", "Javascript", "Git" ],
         "from": 2018,
         "to": 2019
@@ -127,7 +135,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p>Lors de mon passage en indépendant, j'ai voulu découvrir une technologie que je n'avais utilisé seulement pendant mes études dans le monde professionnel.</p><p><ul><li>Développement</li><li>Maintenance</li></ul></p>",
+        "description": "<p><strong>Mes missions</strong> :<ul><li>Correction de bugs</li><li>Participation à la mise en place de l’organisation de l’équipe Atos Montpellier</li></ul></p><p>Application pour l’armée de terre</p>",
         "technicalEnvironments": [ "Java", "PostgreSQL", "Git" ],
         "from": 2018,
         "to": 2018
@@ -157,7 +165,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p>Le logiciel est composé d'un framework ainsi que de développements spécifiques pour les différentes filières agricoles. Je faisais parti de l'équipe développant le framework.</p><p>L'équipe travaillait en agilité</p><p><ul><li>Développement</li><li>Maintenance</li><li>Tests de performance</li></ul></p>",
+        "description": "<p><strong>Mes missions sur AGREO</strong> :<ul><li>Développement de fonctionnalité sur le framework de l’application</li><li>Mise en place de tests de performance</li><li>Correction de bugs</li><li>Tests de performance</li></ul></p><p><strong>Mes tâches marquantes</strong> :<ul><li>Mise en place de tests de performance avec Neoload permettant de détecter des fuites mémoires</li><li>Amélioration des performances d’affichages des parcelles agricoles sur le module de cartographie</li></ul></p><p>L’équipe est organisée autour de la méthodologie scrum.</p><p><span class='underline'>AGREO</span> : Application permettant de gérer des productions agricoles</p>",
         "technicalEnvironments": [ "C#", "ASP.Net", ".Net framework", "SQL Server", "HTML", "CSS", "Javascript", "ExtJS", "SVN" ],
         "from": 2017,
         "to": 2018
@@ -171,7 +179,7 @@
             "icon": "domain"
           },
           {
-            "label": "Client : Sofradir & Ulis",
+            "label": "Client : Lynred (ex Sofradir & Ulis)",
             "icon": "domain"
           },
           {
@@ -187,13 +195,13 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p>Le logiciel sur lequel j'ai travaillé était le MES (Manufacturing Execution System) permettant de gérer la chaine de production de l'entreprise.</p><p>Le projet était organisé en agilité grâce à la méthode Scrum</p><p><ul><li>Développements</li><li>Tests unitaires</li></ul></p>",
+        "description": "<p><strong>Mes missions sur le MES</strong> :<ul><li>Développement de nouvelles fonctionnalités</li><li>Mise en place de tests unitaires</li><li>Correction de bugs</li></ul></p><p><strong>Mes développements marquants</strong> :<ul><li>Développement d’une fonctionnalité permettant de suivre la réparation d’un produit détecté comme défectueux au milieu de la chaîne de production.</li><li>Mise en place de l’interconnexion avec un logiciel d’achat externe.</li></ul></p><p>L’équipe est organisée autour de la méthodologie scrum.</p><p><span class='underline'>MES (Manufacturing Execution System)</span> : Application permettant de piloter les chaînes de productions du client.</p>",
         "technicalEnvironments": [ "C#", "VB", ".Net framework", "Oracle Database", "TFS" ],
         "from": 2016,
         "to": 2017
       },
       {
-        "name": "Développeur Web .Net",
+        "name": "Développeur .Net",
         "supplement": "CDI",
         "iconInfos": [
           {
@@ -213,7 +221,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p>Imail est spécialisé dans les logiciels dans le domaine du handicap. Les clients sont des entreprises françaises de grande taille (Atos, Capgemini, Thales, Safran, Air Liquide, Areva, ...)</p><p>L'équipe est en charge de l'ensemble du cycle de vie du logiciel. J'ai à ce poste eu la résponsabilité des tâches suivantes :<ul><li>Conception</li><li>Développements</li><li>Maintenance</li><li>Hotline</li><li>Formation utilisateurs</li></ul></p>",
+        "description": "<p><strong>Mes missions sur Opthimum</strong> :<ul><li>Conception et développement de nouvelles fonctionnalités</li><li>Recueil du besoin et présentation des évolutions auprès des clients</li><li>Rédaction de cahier des charges</li><li>Amélioration des performances du logiciel</li><li>Amélioration de la sécurité du logiciel</li><li>Correction de bugs</li><li>Hotline</li><li>Formations aux utilisatrices et utilisateurs à distance et en présentiel</li><li>Participation à un salon pour promouvoir le logiciel</li></ul></p><p><strong>Mes développements marquants</strong> :<ul><li>Mise en place d’un système de notification par mail et sur la plateforme pour avertir les utilisatrices et utilisateurs de différents événements (fin de contrat, fin de reconnaissance de handicap, …)</li><li>Amélioration des performances des extractions (passage de 3 minutes à moins de 10 secondes)</li><li>Mise place d’une authentification SSO pour certains clients</li><li>Participation à la mise en place de la télédéclaration avec le gouvernement</li></ul></p><p><span class='underline'>Opthimum</span> : Application de gestion des politiques d’emploi des Travailleurs en situation de Handicap. L’application est à destinations de grands comptes (Atos, Capgemini, Thales, Safran, Air Liquide, Areva, …).</p><hr><p><strong>Mes missions sur Cooptalenth</strong> :<ul><li>Recueil du besoin auprès des futurs clients</li><li>Conception et développement des premières fonctionnalités</li><li>Participation au choix des technologies du projet</li></ul><p><span class='underline'>Cooptalenth</span> : Application permettant de faciliter le recrutement de personnes en situation de handicap.</p>",
         "technicalEnvironments": [ "C#", "ASP.Net", ".Net framework", "SQL Server", "HTML", "CSS/SCSS", "Boostrap", "Javascript", "TFS" ],
         "from": 2013,
         "to": 2016
@@ -235,7 +243,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p><ul><li>Administration systèmes et réseaux</li><li>Intégration d'un site de e-commerce</li></ul></p>",
+        "description": "<p><ul><li>Administration systèmes et réseaux<ul><li>Environnement Microsoft</li></ul></li><li>Intégration d'un site de e-commerce</li></ul></p>",
         "technicalEnvironments": [ "HTML", "CSS", "Javascript", "Windows" ],
         "from": 2011,
         "to": 2012
@@ -257,7 +265,7 @@
             "icon": "work_outline"
           }
         ],
-        "description": "<p>Administration systèmes et réseaux</p>",
+        "description": "<ul><li>Administration systèmes et réseaux<ul><li>Environnement Microsoft et Linux</li></ul></li><li>Mise en place d’une solution de déploiement automatisée de systèmes d’exploitations</li></ul>",
         "technicalEnvironments": [ "Windows", "Linux" ],
         "from": 2009,
         "to": 2011
@@ -333,11 +341,11 @@
   },
   "hobbies": [
     {
-      "label": "Skiing",
+      "label": "Ski",
       "icon": "skiing"
     },
     {
-      "label": "Climbing",
+      "label": "Escalade",
       "icon": "climbing"
     },
     {
@@ -345,7 +353,7 @@
       "icon": "biking"
     },
     {
-      "label": "Playing guitar",
+      "label": "Guitare",
       "icon": "guitar"
     },
     {
@@ -353,19 +361,19 @@
       "icon": "travel"
     },
     {
-      "label": "Coding",
+      "label": "Coder",
       "icon": "coding"
     },
     {
-      "label": "Playing board games / RPG",
+      "label": "Jeux de société / JDR",
       "icon": "game"
     },
     {
-      "label": "Playing video games",
+      "label": "Jeux vidéos",
       "icon": "videogame"
     },
     {
-      "label": "Regarder des films & series",
+      "label": "Films & séries",
       "icon": "tv"
     }
   ]
