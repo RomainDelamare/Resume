@@ -4,7 +4,7 @@
   "picture": "",
   "location": "Montpellier",
   "birthday": "1991-10-19",
-  "aboutme": "Je suis un développeur passionné qui cherche constamment à découvrir, apprendre, partager et donner le meilleur de moi même afin de répondre aux besoins métier. La qualité est un point essentiel dans mon travail, c’est pourquoi je respecte les principes SOLID et le clean code. J'essaye également de promouvoir le DDD, la mise en place de tests unitaires, d'intégration, ... ainsi que l'utilisation du TDD.",
+  "aboutme": "Je suis un développeur passionné qui cherche constamment à découvrir, apprendre, partager tout en gardant à l'esprit que l'objectif est de répondre aux besoins métier. La qualité est un point essentiel dans mon travail, c’est pourquoi je respecte les principes SOLID, le clean code, la mise en place de tests unitaires, d'intégration, ... Je m'interesse également à différentes méthodes comme le TDD, le DDD ou le BDD.",
   "contacts": [
     {
       "link": "https://www.linkedin.com/in/romain-delamare/",
