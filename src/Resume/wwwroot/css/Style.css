@@ -504,6 +504,11 @@ app {
   display: flex;
   flex-direction: column; }
 
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #888; }
+
 #loading-wrapper {
   flex-grow: 1;
   display: flex;
