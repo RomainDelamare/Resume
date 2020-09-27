@@ -353,6 +353,10 @@
       "icon": "biking"
     },
     {
+      "label": "Golf",
+      "icon": "golf"
+    },
+    {
       "label": "Guitare",
       "icon": "guitar"
     },
