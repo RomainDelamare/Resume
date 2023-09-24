@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-GA+Sh3s9\/\/664XRP3CFE7rpg7SeXU+xZTXLzIpF52qc=",
+      "hash": "sha256-KA7RiTTrfeBPzRxGUeUaoJBFBTMDTzix1OSLw3WzJvE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -97,7 +97,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-RGr1iwnR6aKyP\/jO87vw5kLBDo2+Au8Aid5ySGnJwx4=",
+      "hash": "sha256-K74iMt+gdhvZONglLGdljDMcQfm7vXL0oQxncAHh7Kk=",
       "url": "_framework\/Resume.wasm"
     },
     {
@@ -193,7 +193,7 @@
       "url": "data\/resume\/resume_en.json"
     },
     {
-      "hash": "sha256-LPiUWKiKeHGdIG075FV3C8W1TT1RtCmplFwMPfQ4D3w=",
+      "hash": "sha256-HPIO+Vk7KO5VAptKS++Kt48CMZtZqLLmV65A6yiAVUM=",
       "url": "data\/resume\/resume_fr.json"
     },
     {
@@ -281,5 +281,5 @@
       "url": "scripts\/IntersectionObserver.js"
     }
   ],
-  "version": "9y8DRPdp"
+  "version": "NNjvWQFO"
 };
