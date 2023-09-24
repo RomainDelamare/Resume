@@ -451,7 +451,7 @@
         content: '•';
         display: inline-block;
         color: #7002c4;
-        margin-left: 4px; }
+        margin: 0px 4px; }
     .component-timeline .timeline-event.animate-me.entered .timeline-line:before {
       animation-delay: 0.2s;
       animation-duration: 1s;
