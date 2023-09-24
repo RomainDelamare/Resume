@@ -29,20 +29,32 @@
   ],
   "skills": [
     {
-      "label": "C#",
+      "label": "C# / .Net",
       "percentage": 90
     },
     {
-      "label": "Angular",
-      "percentage": 75
+      "label": ".Net MAUI / Xamarin",
+      "percentage": 80
     },
     {
-      "label": "HTML/CSS",
-      "percentage": 75
+      "label": "Angular",
+      "percentage": 70
+    },
+    {
+      "label": "HTML / CSS",
+      "percentage": 70
     },
     {
       "label": "Blazor",
-      "percentage": 50
+      "percentage": 60
+    },
+    {
+      "label": "Javascript",
+      "percentage": 60
+    },
+    {
+      "label": "SQL",
+      "percentage": 80
     }
   ],
   "experience": {
@@ -146,6 +158,10 @@
     {
       "label": "Skiing",
       "icon": "skiing"
+    },
+    {
+      "label": "Golfing",
+      "icon": "golf"
     },
     {
       "label": "Climbing",

@@ -33,20 +33,24 @@
       "percentage": 90
     },
     {
-      "label": "Angular",
+      "label": ".Net MAUI / Xamarin",
       "percentage": 80
+    },
+    {
+      "label": "Angular",
+      "percentage": 70
     },
     {
       "label": "HTML / CSS",
-      "percentage": 80
+      "percentage": 70
     },
     {
       "label": "Blazor",
-      "percentage": 70
+      "percentage": 60
     },
     {
       "label": "Javascript",
-      "percentage": 70
+      "percentage": 60
     },
     {
       "label": "SQL",
@@ -55,6 +59,31 @@
   ],
   "experience": {
     "events": [
+      {
+        "name": "Développeur Fullstack .Net / Angular",
+        "supplement": "Freelance",
+        "iconInfos": [
+          {
+            "label": "Sogetrel",
+            "icon": "domain"
+          },
+          {
+            "label": "Montpellier",
+            "icon": "place"
+          },
+          {
+            "label": "Équipe : 6 personnes",
+            "icon": "people"
+          },
+          {
+            "label": "Télécommunications",
+            "icon": "work_outline"
+          }
+        ],
+        "description": "<p><strong>Mes missions sur WEBINTER</strong> :<ul>   <li>      Conception et développement de nouvelles fonctionnalités      <ul>         <li>WebApi .Net</li>         <li>Azure Function .Net</li>         <li>Applications Angular</li>         <li>Applications mobiles .Net MAUI & Xamarin</li>      </ul>   </li>   <li>Rédaction de tests unitaires, tests d’intégration et tests architecturaux</li>   <li>Mise en place de CI/CD</li>   <li>Mise à niveau des versions .Net & Angular des différents projets</li>   <li>Relecture de pull request</li>   <li>Recueil du besoin auprès des clients</li>   <li>Création de maquettes pour les interfaces utilisateurs</li>   <li>Rédaction de documents d'architecture technique (DAT)</li>   <li>Mise en place de tests de performance</li>   <li>Utilisation des principes SOLID et clean code</li>   <li>Correction de bugs</li></ul></p><p><strong>Mes projets marquants</strong> : <ul>   <li>Création de la nouvelle application mobile des techniciens : Modélisation de l’architecture de l’application. Mise en place d’une authentification Azure Ad. Création des écrans en utilisant le pattern MVVM et réalisation des fonctionnalités. Rédaction des tests unitaires. Déploiement dans Visual Studio App Center.</li>   <li>Création d’une application de gestion des malfaçons : Réalisation de l’API. Modélisation de l’architecture. Réalisation des fonctionnalités dont une gestion de données de localisations. Rédaction des tests unitaires et d’intégrations.</li>   <li>Création d’un module de transcodification : Modélisation de la fonctionnalité (la transcodification permet de faire des mapping fonctionnels). Création des écrans en Angular. Réalisation de l’API. Rédaction des tests unitaires et d’intégrations.</li>   <li>Intégration d’Orange dans WEBINTER : Modélisation de l’architecture des flux et d'interaction des différents composants. Création et modification des microservices impliqués. Rédaction des tests unitaires et d’intégrations. Mise en place de tests de performance.</li>   <li>Migration de MongoDB vers SQLServer : Modélisation des tables SQL. Réécriture des DAL avec les TU/TI impactés. Migration des données.</li></ul></p><p>L’équipe est organisée autour de la méthodologie scrum.</p><p><span class='underline'>WEBINTER</span> : C’est la solution en micro service qui permet de gérer les interventions des techniciens Sogetrel pour le compte de différents clients (Bouygues Telecom, Orange, Nexecur, …). Cette solution et interfacée avec les SI des différents client ainsi que des outils utilisés par les services internes.</p>",
+        "technicalEnvironments": [ "C#", ".Net Core", ".Net MAUI/Xamarin", "Angular", "SQL Server", "MongoDB ", "Azure", "Azure DevOPS", "SonarCloud", "Kibana", "Redis", "K6", "Git" ],
+        "from": 2020
+      },
       {
         "name": "Développeur Fullstack .Net / Angular",
         "supplement": "Freelance",
@@ -78,7 +107,8 @@
         ],
         "description": "<p>Je travail sur le LMS (Learning Management System) de l’entreprise</p><p><strong>Développement</strong> :<ul><li>Développement de nouvelles fonctionnalités</li><li>Refonte de modules</li><li>Amélioration des performances</li><li>Refactorisation</li><li>Intégration de services externes dans l’application pour les besoins des apprenant.e.s (passage de certifications, Github student, Dropbox) ainsi que nos besoins techniques (génération de document avec Carbone.io, hébergement et lecteur vidéo avec JWPlayer)</li><li>Utilisation des principes SOLID et clean code</li><li>Mise en place de tests unitaires</li><li>Correction de bugs</li></ul></p><p><strong>Architecture</strong> : <ul><li>Participation aux réflexions d’architectures des nouveaux développements</li><li>Etude des architectures microservices et monolithe modulaires dans l’optique de faire évoluer l’application actuelle afin de la rendre plus maintenable et scalable</li><li>Migration d’AngularJS vers Angular avec une approche hybride</li><li>Utilisation des patterns DDD (Domain Driven Design) tactiques</li><li>CQRS (Command and Query Responsibility Segregation)</li></ul></p><p><strong>Conception / Modélisation</strong> :<ul><li>Approche orienté domaine métier</li><li>Event storming</li><li>Approche DDD (Domain Driven Design) stratégique.</li></ul></p><p><strong>Encadrement d’un développeur junior</strong> :<ul><li>Rédaction de spécifications techniques</li><li>Suivi quotidien et pair programming</li><li>Validation des développements</li></ul></p><p><strong>Agilité</strong> :<ul><li>Mise en place et animation des rétrospectives</li><li>Systématisation des stand-up daily</li><li>Acteur dans le passage de la méthode Scrum à Kanban, plus adaptée à notre fonctionnement.</li></ul></p><p><span class='underline'>LMS (Learning Management System)</span> : Application permettant aux apprenant.e.s d’accéder à leurs formations, de communiquer entre eux ou avec les formatrices et formateurs. Les équipes internes peuvent également gérer l’ensemble du contenu.</p>",
         "technicalEnvironments": [ "C#", ".Net Core", ".Net framework", "Angular", "SQL Server", "MySQL", "Git" ],
-        "from": 2019
+        "from": 2019,
+        "to": 2020
       },
       {
         "name": "Développeur .Net",
@@ -345,16 +375,16 @@
       "icon": "skiing"
     },
     {
+      "label": "Golf",
+      "icon": "golf"
+    },
+    {
       "label": "Escalade",
       "icon": "climbing"
     },
     {
       "label": "VTT",
       "icon": "biking"
-    },
-    {
-      "label": "Golf",
-      "icon": "golf"
     },
     {
       "label": "Guitare",
